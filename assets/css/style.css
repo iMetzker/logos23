@@ -1,0 +1,251 @@
+:root {
+  --orange-color: #ce6b03;
+  --orange-ligt-color: #ff8403;
+  --blue-color: #072151;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* MENU */
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  height: 9rem;
+  min-width: 100vw;
+  border-bottom: 0.1rem solid #e5e5e5;
+  background-color: #FFFFFF;
+}
+
+.menu-content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul a {
+  display: block;
+  color: #000000;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.logo a:hover {
+  cursor: pointer;
+}
+
+.menu-content nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -1.6rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--orange-color);
+  transition: all 300ms ease-in-out;
+}
+
+.menu-content nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 5rem;
+  margin: 0 auto;
+}
+
+.page-all {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* HOME */
+
+.video-intro {
+  max-width: 100vw;
+}
+
+.video-intro video {
+  width: 100%;
+}
+
+.home-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  gap: 2rem;
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e5e5e5;
+  padding-left: 5rem;
+  max-width: 90rem;
+}
+
+.text-content a {
+  text-decoration: none;
+  color: var(--orange-color);
+  background-color: #FFFFFF;
+  width: 40rem;
+  padding: 2rem 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.text-content a:hover {
+  cursor: pointer;
+  background-color: var(--orange-color);
+  color: #e5e5e5;
+  transition: all 300ms ease-in-out;
+}
+
+/* ABOUT */
+
+.about-content {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-about-container {
+  padding: 10rem 5rem; 
+  -webkit-transform: skew(8deg) translateX(140px);
+      -ms-transform: skew(8deg) translateX(140px);
+          transform: skew(8deg) translateX(140px);
+  left: 0
+}
+
+.text-about {
+  position: relative;
+  top: -.3rem;
+  background-color: var(--orange-color);
+  color: #e5e5e5;
+  -webkit-transform: skew(-8deg) translateX(-70px);
+  -ms-transform: skew(-8deg) translateX(-70px);
+      transform: skew(-8deg) translateX(-70px);
+  left: 0;
+}
+
+.text-about-content{
+  position: relative;
+  max-width: 65rem;
+}
+
+.text-about-container h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+hr{
+  width: 7rem;
+  height: .2rem;
+  border:none;
+  background-color: #e9ecef;
+  border-radius: .1rem;
+  margin: 3rem 0;
+}
+
+.container-more-about-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.content-more-about-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-more-about-text .title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.content-more-about-text p {
+  font-size: 1.5rem;
+}
+
+.about-more {
+  padding: 7rem 0;
+  gap: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color:#363636;
+  font-style: italic;
+}
+
+.about-more hr {
+  background-color: var(--orange-color);
+  margin: 2rem 0;
+}
+
+.about-more h3 {
+  color: var(--blue-color);
+  font-style: normal;
+  font-size: 2.5rem;
+}
+
+.about-more-container {
+  max-width: 50rem;
+}
+
+.text-about-content p {
+  padding-top: 1rem;
+}
+
+
