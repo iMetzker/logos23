@@ -222,7 +222,7 @@ hr {
 }
 
 .about-more {
-  padding: 7rem 0;
+  padding: 7rem 2rem;
   gap: 10rem;
   display: flex;
   justify-content: center;
@@ -277,6 +277,7 @@ hr {
 .swiper-slide {
   text-align: center;
   position: relative;
+  padding: 2rem;
 }
 
 .swiper-slide img {
@@ -507,4 +508,8 @@ footer {
 
 .icons-fot svg {
   opacity: 50%;
+}
+
+#partners .swiper-slide {
+  padding: 0 13rem;
 }
