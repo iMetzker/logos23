@@ -31,7 +31,7 @@ a {
   height: 9rem;
   min-width: 100vw;
   border-bottom: 0.1rem solid #e5e5e5;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .menu-content {
@@ -79,7 +79,7 @@ a {
 
 .page {
   min-height: 100vh;
-  padding: 5rem;
+  padding: 15rem 10rem;
   margin: 0 auto;
 }
 
@@ -128,7 +128,7 @@ a {
 .text-content a {
   text-decoration: none;
   color: var(--orange-color);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 40rem;
   padding: 2rem 3rem;
 
@@ -153,29 +153,32 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  align-items: end;
 }
 
 .text-about-container {
-  padding: 10rem 5rem; 
+  padding: 15rem 5rem;
   -webkit-transform: skew(8deg) translateX(140px);
-      -ms-transform: skew(8deg) translateX(140px);
-          transform: skew(8deg) translateX(140px);
-  left: 0
+  -ms-transform: skew(8deg) translateX(140px);
+  transform: skew(8deg) translateX(140px);
+  left: 0;
 }
 
 .text-about {
   position: relative;
-  top: -.3rem;
+  top: -0.3rem;
   background-color: var(--orange-color);
   color: #e5e5e5;
   -webkit-transform: skew(-8deg) translateX(-70px);
   -ms-transform: skew(-8deg) translateX(-70px);
-      transform: skew(-8deg) translateX(-70px);
+  transform: skew(-8deg) translateX(-70px);
   left: 0;
 }
 
-.text-about-content{
+
+
+.text-about-content {
   position: relative;
   max-width: 65rem;
 }
@@ -185,12 +188,12 @@ a {
   font-size: 3rem;
 }
 
-hr{
+hr {
   width: 7rem;
-  height: .2rem;
-  border:none;
+  height: 0.2rem;
+  border: none;
   background-color: #e9ecef;
-  border-radius: .1rem;
+  border-radius: 0.1rem;
   margin: 3rem 0;
 }
 
@@ -200,7 +203,7 @@ hr{
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding-top: 5rem;
 }
 
 .content-more-about-text {
@@ -225,7 +228,7 @@ hr{
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
-  color:#363636;
+  color: #363636;
   font-style: italic;
 }
 
@@ -248,4 +251,260 @@ hr{
   padding-top: 1rem;
 }
 
+/* ABOUT - VEHICLES */
+.vehicles {
+  padding: 15rem 10rem;
+  background-color: #f8f9fa;
+}
+.title-all h2 {
+  font-size: 3rem;
+  color: var(--blue-color);
+  text-transform: uppercase;
+}
 
+.title-all hr {
+  background-color: var(--orange-color);
+  margin-bottom: 10rem;
+}
+
+/* ABOUT- VAHICLES SLIDER */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  gap: 2rem;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+/* SERVICES */
+
+.services-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  color: #333533;
+}
+
+.img-container {
+  width: 48rem;
+  height: 30rem;
+  border-radius: .5rem;
+}
+
+.service-about img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.service-about {
+  padding-bottom: 8rem;
+}
+
+.service-about h3{
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.service-about p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+  text-align: justify;
+  height: 13rem;
+  width: 48rem;
+}
+
+.service-about a {
+  background-color: var(--blue-color);
+  color: #ffffff;
+  width: 30rem;
+  padding: 2rem 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.service-about a:hover {
+  cursor: pointer;
+  background-color: var(--orange-color);
+  color: #e5e5e5;
+  transition: all 300ms ease-in-out;
+}
+
+.part-wrapper {
+  align-items: center;
+}
+
+#partners .part-title hr{
+  margin: 1rem;
+}
+
+.time-line {
+  background-color: #f8f9fa;
+  color: #e5e5e5;
+  width: 100%;
+  height: 40rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.ball-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ball {
+  width: 13rem;
+  height: 13rem;
+  background-color: #f77f00;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.time-line h4 {
+  padding-top: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--blue-color);
+}
+
+.time-line p {
+  padding-top: .7rem;
+  max-width: 25rem;
+  text-align: center;
+  color:#463f3a;
+}
+
+/* CONTACT */
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo-more h3{
+  color: var(--orange-color);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 2rem;
+}
+
+.contact-about a {
+  color:#333533;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding:  0 .5rem;
+}
+
+.contact-icons a:hover svg {
+  fill: #f77f00;
+  transition: all 300ms ease-in-out;
+}
+
+.contact-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.region {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  color: var(--orange-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding:  .7rem .5rem;
+  text-transform: uppercase;
+}
+
+.map-regions h2{
+  padding-bottom: 5rem;
+}
+
+.map-logo {
+  padding-right: 4rem;
+}
+
+footer {
+  margin-top: -10rem;
+  background-color: var(--blue-color);
+  color: #e5e5e5;
+  width: 100%;
+  padding:  6rem 15rem ;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.3rem;
+}
+
+.icons-fot {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.icons-fot svg {
+  opacity: 50%;
+}
