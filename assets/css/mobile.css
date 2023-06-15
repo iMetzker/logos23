@@ -7,6 +7,10 @@
   .text-content {
     padding-top: 3rem;
   }
+
+  .title-all {
+    padding-top: 10rem;
+  }
 }
 
 @media (max-width: 1005px) {
@@ -284,4 +288,33 @@
     }
   }
 
-  /* PARTNERS */
+  /* SWIPPER */
+  @media screen and (max-width: 900px) {
+    .swiper-slide {
+      padding: 0;
+      padding-left: 1rem;
+  }
+
+  .mobile-part {
+    display: flex;
+  }
+
+  .swiper {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#partners .part-title hr{
+  margin-bottom: 3rem;
+}
+}
+
+@media screen and (max-width: 454px) {
+  .slide-mobile {
+    padding: 2rem;
+  }
+}
+
+
+
