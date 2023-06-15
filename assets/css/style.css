@@ -13,21 +13,28 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 a {
   text-decoration: none;
 }
 
+
 /* MENU */
+
+.menu-mobile-lines {
+  position: absolute;
+}
 
 .menu {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   height: 9rem;
   min-width: 100vw;
   border-bottom: 0.1rem solid #e5e5e5;
@@ -91,11 +98,21 @@ a {
 /* HOME */
 
 .video-intro {
-  max-width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 
 .video-intro video {
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 1s opacity;
 }
 
 .home-content {
@@ -104,6 +121,8 @@ a {
   flex-direction: column;
 
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .home-content h1 {
@@ -123,6 +142,7 @@ a {
   color: #e5e5e5;
   padding-left: 5rem;
   max-width: 90rem;
+  z-index: 3;
 }
 
 .text-content a {
@@ -167,7 +187,6 @@ a {
 
 .text-about {
   position: relative;
-  top: -0.3rem;
   background-color: var(--orange-color);
   color: #e5e5e5;
   -webkit-transform: skew(-8deg) translateX(-70px);
@@ -175,8 +194,6 @@ a {
   transform: skew(-8deg) translateX(-70px);
   left: 0;
 }
-
-
 
 .text-about-content {
   position: relative;
@@ -225,6 +242,7 @@ hr {
   padding: 7rem 2rem;
   gap: 10rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
@@ -243,6 +261,10 @@ hr {
   font-size: 2.5rem;
 }
 
+.about-more p {
+  text-align: justify;
+}
+
 .about-more-container {
   max-width: 50rem;
 }
@@ -253,6 +275,7 @@ hr {
 
 /* ABOUT - VEHICLES */
 .vehicles {
+  position: relative;
   padding: 15rem 10rem;
   background-color: #f8f9fa;
 }
@@ -275,17 +298,18 @@ hr {
 }
 
 .swiper-slide {
+  display: flex;
   text-align: center;
-  position: relative;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
+  width: 100%;
+  height: 30rem;
 }
 
 .swiper-slide img {
-  width: 100%;
-}
-
-.swiper-wrapper {
-  gap: 2rem;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 760px) {
@@ -305,9 +329,9 @@ hr {
 .services-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2rem;
   color: #333533;
 }
 
@@ -377,12 +401,14 @@ hr {
   background-color: #f8f9fa;
   color: #e5e5e5;
   width: 100%;
-  height: 40rem;
+  padding: 6rem 3rem;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  gap: 2rem;
   font-size: 1.6rem;
 }
 
@@ -420,6 +446,8 @@ hr {
 
 .contact-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -512,4 +540,31 @@ footer {
 
 #partners .swiper-slide {
   padding: 0 13rem;
+}
+
+/* ANIMATIONS */
+[data-animated] {
+  opacity: 0;
+  transition: 0.4s;
+}
+
+[data-animated="left"] {
+  transform: translate3d(-10rem, 0, 0);
+}
+
+[data-animated="right"] {
+  transform: translate3d(10rem, 0, 0);
+}
+
+[data-animated="top"] {
+  transform: translate3d(0, -30rem, 0);
+}
+
+[data-animated="bottom"] {
+  transform: translate3d(0, 30rem, 0);
+}
+
+[data-animated].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
