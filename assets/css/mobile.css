@@ -29,6 +29,17 @@
   }
 }
 
+@media (max-width: 570px) {
+    .text-content h1{
+      width: 30rem;
+    }
+
+    .text-content a {
+        width: 25rem;
+        font-size: 1.4rem;
+    }
+  }
+
 /* MENU */
 
 @media (max-width: 815px) {
