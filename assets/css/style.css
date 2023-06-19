@@ -333,12 +333,8 @@ hr {
   flex-wrap: wrap;
 }
 
-.slide-mobile {
-  padding: 6rem;
-}
-
 .slide-mobile img{
-  width: 20rem;
+  width: 80%;
 }
 
 .slide-mobile svg{
@@ -346,7 +342,7 @@ hr {
 }
 
 .vehicles .slide-mobile {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 

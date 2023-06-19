@@ -192,7 +192,7 @@
   }
 
   .vehicles h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -245,6 +245,7 @@
 @media screen and (max-width: 1578px) {
   .contact-container {
     justify-content: center;
+    padding-top: 10rem;
   }
   .map {
     padding: 5rem 0;
@@ -293,6 +294,10 @@
     .swiper-slide {
       padding: 0;
       padding-left: 1rem;
+  }
+
+  #contact .title-contact {
+    padding-top: 5rem;
   }
 
   .mobile-part {
