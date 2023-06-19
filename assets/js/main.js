@@ -11,7 +11,7 @@ function menuMobile() {
 
 function animation() {
   const animationClass = "animate";
-  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4;
+  const windowTop = window.scrollY + (window.innerHeight * 3) / 4;
   target.forEach((element) => {
     if (windowTop > element.offsetTop) {
       element.classList.add(animationClass);
