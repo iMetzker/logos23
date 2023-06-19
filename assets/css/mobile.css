@@ -179,12 +179,21 @@
 }
 
 @media (max-width: 1025px) {
+  
+  .logo p {
+    font-size: 1.2rem;
+  }
+
   .text-about-container {
     width: auto;
   }
 
   .vehicles {
-    padding: 15rem 2rem;
+    padding: 7rem 2rem;
+  }
+
+  div.vehicles-title {
+    padding-top: 2rem;
   }
 
   .page {

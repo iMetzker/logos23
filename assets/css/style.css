@@ -66,6 +66,18 @@ a {
   position: relative;
 }
 
+.logo a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo p {
+  font-weight: bold;
+  color: var(--blue-color);
+  font-size: 1.3rem;
+}
+
 .logo a:hover {
   cursor: pointer;
 }
@@ -278,7 +290,7 @@ hr {
 /* ABOUT - VEHICLES */
 .vehicles {
   position: relative;
-  padding: 15rem 10rem;
+  padding: 7rem 10rem;
   background-color: #f8f9fa;
 }
 .title-all h2 {
@@ -486,6 +498,11 @@ hr {
   text-transform: uppercase;
   font-weight: 900;
   padding-bottom: 2rem;
+}
+
+.logo-more h3.logo-text {
+  color: var(--blue-color);
+  font-size: 2rem;
 }
 
 .contact-about a {
